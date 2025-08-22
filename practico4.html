@@ -1,0 +1,73 @@
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Práctico 5 - Diseño Responsivo con Flexbox</title>
+<style>
+
+.contenedor {
+display: flex;
+flex-wrap: wrap; 
+gap: 20px;       
+}
+
+.columna {
+flex: 1; 
+padding: 20px;
+color: white;
+text-align: center;
+border-radius: 8px;
+}
+
+
+
+
+.columna1 {
+col-md-4
+background-color:blue; l 
+}
+
+.columna2 {
+col-md-4
+background-color:red; 
+}
+
+.columna3 {
+col-md-4
+background-color:grey; 
+}
+
+
+
+
+@media (min-width: 1200px) {
+.columna {
+flex: 1; 
+}
+}
+
+@media (max-width: 767px) {
+.columna {
+flex: 100%; 
+}
+}
+
+
+@media (min-width: 768px) {
+.columna {
+flex: 50%; 
+}
+}
+
+</style>
+</head>
+<body>
+
+<div class="contenedor">
+<div class="columna columna1">Columna 1</div>
+<div class="columna columna2">Columna 2</div>
+<div class="columna columna3">Columna 3</div>
+</div>
+
+</body>
+</html>
